@@ -1,0 +1,21 @@
+Slide 1
+Good morning, everyone! My name is Alex Tsvetanov and I am a 9th grade student at the SHSM. Over the past couple of weeks I worked under the supervision of Zlatogor Minchev and Emil Kelevedzhiev on a project called ‘Artificial Teacher’.
+Slide 2
+The main aim of my project is to build a system that combines the newest techniques to make education more interesting. That will be achieved by combining the best practices in organizing trainings. As a part of my project I have developed an educational application where through a conversation with an artificial teacher the student can learn more about topics that they are interested in. 
+Slide 3
+So, you might ask, why is that application useful?
+Well, there are two reasons -
+	It can be used as a self-study resource and for implementing the most modern technologies to education. 
+It also allows young people to dive in the most up to date technologies. What is more, it can provoke the interest of young people in the school subjects.
+Slide 4
+The architecture of the application is constructed by big API which uses NN and ES to ask and answer questions. The trainee communicates with the API through the visual interface.
+Slide 5
+The innovation in my project is that I am combining two modern technologies - … and … . to make learning closer to the new generation. This will make education more interactive.
+Slide 6
+What I have done so far is to develop a NN API and a prototype of the user interface.
+Slide 7
+However, I still have a lot of work to do on this project. I plan on improving the API, to finish the…, to build .., to finish … ,,,,, and to build an AR application.
+Slide 9
+I am extremely grateful to …. And would also like to thank… 
+
+
