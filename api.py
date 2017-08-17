@@ -20,7 +20,7 @@ bot = ChatBot(
 	#,output_adapter="chatterbot.output.OutputAdapter"
 )
 
-bot.train('chatterbot.corpus.english')
+#bot.train('chatterbot.corpus.english')
 #bot.train('chatterbot.corpus.russian')
 #bot.train('chatterbot.corpus.french')
 #bot.train('chatterbot.corpus.german')
@@ -75,7 +75,8 @@ def login():
 	if request.method == 'POST':
 		session['username'] = request.form['username']
 		response = redirect(url_for('index'))
-		response.set_cookie('c', '[]');
+		#response.set_cookie('c', '[]')
+		response.set_cookie('c', json.dumps([{"author": "human", "text":"Hi"} ,{"author": "bot", "text":"How are you"} ,{"author": "human", "text":"I'm a little bit sleepy"} ,{"author": "bot", "text":"You too?"} ,{"author": "human", "text":"Yes"} ,{"author": "bot", "text":"No"} ,{"author": "human", "text":"Why no? Are you sleepy"} ,{"author": "bot", "text":"Who? Who is but a form following the function of what"} ,{"author": "human", "text":"You?"} ,{"author": "bot", "text":"Yes"} ,{"author": "human", "text":"Well, let's go to sleep"} ,{"author": "bot", "text":"Yes it is."} ,{"author": "human", "text":"It is what?"} ,{"author": "bot", "text":"That is a hypothetical question"} ,{"author": "human", "text":"Hahahaha"} ,{"author": "bot", "text":"It is a medicine."} ,{"author": "human", "text":"Lol, did you study medicine?"} ,{"author": "bot", "text":"The current time is 04:20 AM"} ,{"author": "human", "text":"Lol, 4:20"} ,{"author": "bot", "text":"i always feel like i'm living by my own wits."} ,{"author": "human", "text":"why? don't you have a girlfriend?"} ,{"author": "bot", "text":"i certainly have lost many friends over the years."} ,{"author": "human", "text":"oh, I'm sorry"} ,{"author": "bot", "text":"People worry about things all the time, but"} ,{"author": "human", "text":"But what?"} ,{"author": "bot", "text":"no"} ,{"author": "human", "text":"you don't want to talk about it?"} ,{"author": "bot", "text":"The current time is 04:22 AM"} ,{"author": "human", "text":"Ok, it's time to sleep"} ,{"author": "bot", "text":"You too?"} ,{"author": "human", "text":"Yes"} ,{"author": "bot", "text":"No"} ,{"author": "human", "text":"I'm sorry, I must go to bed"} ,{"author": "bot", "text":"That's good to hear."} ,{"author": "human", "text":"sorry, I didn't want to leave you alone"} ,{"author": "bot", "text":"Thank you anyway"} ,{"author": "human", "text":"No problem"} ,{"author": "bot", "text":"Bots never lie."}]))
 		return response
 	return '''
 		<form action="" method="post">
